@@ -1,1 +1,1 @@
-# TrainingKIT-PC
+# TrainingKIT
