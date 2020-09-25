@@ -1,0 +1,301 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <title>KIT AUTO MODE</title>
+    <meta charset="utf-8">
+    <style>
+      body{
+        background-image: url('image/automode_background.png');
+        width: 1700px;
+        height: 1400px;
+        background-repeat: no-repeat;
+        background-size: 1700px 1400px;
+        margin-top: 10px;
+      }
+      button{
+        border: 0;
+        outline: 0;
+        background-color: #ffffff;
+      }
+      input{
+        border-radius: 5px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+
+  <script src="client_main.js">
+    main();
+  </script>
+
+  <!-- SELECT MODE -->
+    <div>
+      <div style="position: absolute; z-index:2; left: 1120px; top: 175px">
+        <button type="button" onclick="on();"><img src="image/button_silver_steel_off.png" width="200px" height="200px" alt="auto button off"></button>
+      </div>
+       <!--auto mode select gray -->
+      <div id="auto_on" style="position: absolute; z-index:2; left: 1120px; top: 175px; visibility:visible;" >
+        <button type="button" onclick="off();"><img src="image/button_silver_steel_on.png" width="200px" height="200px"></button>
+      </div>
+      <!--auto mode select blue -->
+
+      <script>
+        let x = document.getElementById("auto_on");
+        function on(){
+          x.style.visibility = "visible";
+        }
+        function off(){
+          x.style.visibility = "hidden";
+
+        }
+      </script>
+
+      <div style="position: absolute; z-index:2; left: 1355px; top: 175px">
+        <button type="button" onclick="location.href='KIT_MANUAL.html';"><img src="image/button_silver_steel_off.png" width="200px" height="200px"></button>
+      </div>
+      <!--manual mode select gray -->
+      <!--<div style="position: absolute; z-index:2; left: 1355px; top: 175px  ">
+        <button type="button"><img src="image\button_silver_steel_on.png" width="200px" height="200px"></button>
+      </div>-->
+      <!--manual mode select blue -->
+    </div>
+
+  <!-- START -->
+    <div>
+      <div style="position: absolute; z-index:2; left: 1105px; top: 520px; ">
+        <button type="button"><img src="image/start_button_g.png" width="470px" height="100px"></button>
+      </div>
+      <!--start button gray -->
+      <div style="position: absolute; z-index:2; left: 1105px; top: 520px; visibility: hidden;">
+        <button type="button"><img src="image/start_button.png" width="470px" height="100px"></button>
+      </div>
+      <!--start button blue -->
+    </div>
+
+  <!-- RESTART/RESET MODE -->
+    <div>
+      <div style="position: absolute; z-index:2; left: 110px; top: 1180px;">
+        <button> <img src="image/restart_g.png" width="180px" height="90px"></button>
+      </div>
+      <!--restart button gray-->
+      <div style="position: absolute; z-index:2; left: 110px; top: 1180px; visibility: hidden;">
+        <button> <img src="image/restart_n.png" width="180px" height="90px"></button>
+      </div>
+      <!--restart button blue-->
+
+      <div style="position: absolute; z-index:2; left: 330px; top: 1180px;">
+        <button> <img src="image/reset_button_g.png" width="180px" height="90px"></button>
+      </div>
+      <!--reset button gray-->
+      <div style="position: absolute; z-index:2; left: 330px; top: 1180px; visibility: hidden;">
+        <button> <img src="image/reset_button.png" width="180px" height="90px"></button>
+      </div>
+      <!--reset button blue-->
+    </div>
+
+  <!-- COLOR SORTING RESET -->
+    <div>
+      <div style="position: absolute; z-index:2; left: 885px; top: 900px;">
+        <button> <img src="image/reset_button.png" width="150px" height="70px"></button>
+      </div>
+      <div style="position: absolute; z-index:2; left: 730px; top: 900px;">
+        <textarea readonly style="resize:none; text-align: center; font-size: 17pt; width:130px; height:65px;"></textarea>
+      </div>
+      <!--SILVER SORTING COUNT/RESET-->
+
+      <div style="position: absolute; z-index:2; left: 885px; top: 1035px;">
+        <button> <img src="image/reset_button.png" width="150px" height="70px"></button>
+      </div>
+      <div style="position: absolute; z-index:2; left: 730px; top: 1035px;">
+        <textarea readonly style="resize:none; text-align: center; font-size: 17pt; width:130px; height:65px;"></textarea>
+      </div>
+      <!--RED SORTING COUNT/RESET-->
+
+      <div style="position: absolute; z-index:2; left: 885px; top: 1170px;">
+        <button> <img src="image/reset_button.png" width="150px" height="70px"></button>
+      </div>
+      <div style="position: absolute; z-index:2; left: 730px; top: 1170px;">
+        <textarea readonly style="resize:none; text-align: center; font-size: 17pt; width:130px; height:65px;"/>
+      </div>
+      <!--BLACK SORTING COUNT/RESET-->
+    </div>
+
+  <!--COLOR SELECT INPUT NUMBER-->
+    <div><
+      <div style="position: absolute; z-index:2; left: 1300px; top: 765px;">
+        <input type="text" style="width:230px; height:80px;"/>
+      </div>
+      <div style="position: absolute; z-index:2; left: 1300px; top: 950px;">
+        <input type="text" style="width:230px; height:80px;"/>
+      </div>
+      <div style="position: absolute; z-index:2; left: 1300px; top: 1130px;">
+        <input type="text" style="width:230px; height:80px;"/>
+      </div>
+    </div>
+
+  <!--STATE/ALARM-->
+    <div>
+      <div style="position: absolute; z-index:2; left: 190PX; top: 900PX">
+        <textarea readonly="true" style="resize:none; text-align: center; font-size: 17pt; border:0;"> state </textarea>
+      </div>
+
+      <div style="position: absolute; z-index:2; left: 190PX; top: 1070PX">
+        <textarea readonly="true" style="resize:none; text-align: center; font-size: 17pt; border:0;"> alarm </textarea>
+      </div>
+    </div>
+
+  <!--SENSOR LOCATION LED-->
+    <div>
+      <div style="position: absolute; z-index:2; left: 220px; top: 340px">        <!--DI01-->
+        <img src="image/button_gray_png.png" width="20" height="20">
+      </div>
+      <div style="position: absolute; z-index:2; left: 220px; top: 220px">        <!--DI02-->
+        <img src="image/button_gray_png.png" width="20" height="20">
+      </div>
+      <div style="position: absolute; z-index:2; left: 280px; top: 340px">        <!--DI03-->
+        <img src="image/button_gray_png.png" width="20" height="20">
+      </div>
+      <div style="position: absolute; z-index:2; left: 280px; top: 220px">        <!--DI04-->
+        <img src="image/button_gray_png.png" width="20" height="20">
+      </div>
+
+      <div style="position: absolute; z-index:2; left: 160px; top: 530px">        <!--DI13-->
+        <img src="image/button_gray_png.png" width="20" height="20">
+      </div>
+
+      <div style="position: absolute; z-index:2; left: 240px; top: 610px">        <!--DI15-->
+        <img src="image/button_gray_png.png" width="20" height="20">
+      </div>
+      <div style="position: absolute; z-index:2; left: 240px; top: 650px">        <!--DI16-->
+        <img src="image/button_gray_png.png" width="20" height="20">
+      </div>
+
+      <div style="position: absolute; z-index:2; left: 410px; top: 340px">        <!--DI05-->
+        <img src="image/button_gray_png.png" width="20" height="20">
+      </div>
+      <div style="position: absolute; z-index:2; left: 410px; top: 220px">        <!--DI06-->
+        <img src="image/button_gray_png.png" width="20" height="20">
+      </div>
+
+      <div style="position: absolute; z-index:2; left: 450px; top: 610px">        <!--DI07-->
+        <img src="image/button_gray_png.png" width="20" height="20">
+      </div>
+      <div style="position: absolute; z-index:2; left: 450px; top: 650px">        <!--DI08-->
+        <img src="image/button_gray_png.png" width="20" height="20">
+      </div>
+
+      <div style="position: absolute; z-index:2; left: 400px; top: 690px">        <!--DI17-->
+        <img src="image/button_gray_png.png" width="20" height="20">
+      </div>
+      <div style="position: absolute; z-index:2; left: 450px; top: 732px">        <!--DI21-->
+        <img src="image/button_gray_png.png" width="20" height="20">
+      </div>
+
+      <div style="position: absolute; z-index:2; left: 490px; top: 530px">        <!--DI14-->
+        <img src="image/button_gray_png.png" width="20" height="20">
+      </div>
+
+      <div style="position: absolute; z-index:2; left: 645px; top: 530px">        <!--DI18-->
+        <img src="image/button_gray_png.png" width="20" height="20">
+      </div>
+      <div style="position: absolute; z-index:2; left: 805px; top: 530px">        <!--DI19-->
+        <img src="image/button_gray_png.png" width="20" height="20">
+      </div>
+      <div style="position: absolute; z-index:2; left: 955px; top: 530px">        <!--DI20-->
+        <img src="image/button_gray_png.png" width="20" height="20">
+      </div>
+
+      <div style="position: absolute; z-index:2; left: 595PX; top: 720PX">        <!--DI09-->
+        <img src="image/button_gray_png.png" width="20" height="20">
+      </div>
+      <div style="position: absolute; z-index:2; left: 540PX; top: 720PX">        <!--DI10-->
+        <img src="image/button_gray_png.png" width="20" height="20">
+      </div>
+      <div style="position: absolute; z-index:2; left: 755PX; top: 720PX">        <!--DI11-->
+        <img src="image/button_gray_png.png" width="20" height="20">
+      </div>
+      <div style="position: absolute; z-index:2; left: 700PX; top: 720PX">        <!--DI12-->
+        <img src="image/button_gray_png.png" width="20" height="20">
+      </div>
+
+    </div>
+
+  <!--SENSOR LOCATION LED RED-->
+    <div>
+      <div style="position: absolute; z-index:2; left: 220px; top: 340px">        <!--DI01-->
+        <img src="image/button_red_png.png" width="20" height="20">
+      </div>
+      <div style="position: absolute; z-index:2; left: 220px; top: 220px">        <!--DI02-->
+        <img src="image/button_red_png.png" width="20" height="20">
+      </div>
+      <div style="position: absolute; z-index:2; left: 280px; top: 340px">        <!--DI03-->
+        <img src="image/button_red_png.png" width="20" height="20">
+      </div>
+      <div style="position: absolute; z-index:2; left: 280px; top: 220px">        <!--DI04-->
+        <img src="image/button_red_png.png" width="20" height="20">
+      </div>
+
+      <div style="position: absolute; z-index:2; left: 160px; top: 530px">        <!--DI13-->
+        <img src="image/button_red_png.png" width="20" height="20">
+      </div>
+
+      <div style="position: absolute; z-index:2; left: 240px; top: 610px">        <!--DI15-->
+        <img src="image/button_red_png.png" width="20" height="20">
+      </div>
+      <div style="position: absolute; z-index:2; left: 240px; top: 650px">        <!--DI16-->
+        <img src="image/button_red_png.png" width="20" height="20">
+      </div>
+
+      <div style="position: absolute; z-index:2; left: 410px; top: 340px">        <!--DI05-->
+        <img src="image/button_red_png.png" width="20" height="20">
+      </div>
+      <div style="position: absolute; z-index:2; left: 410px; top: 220px">        <!--DI06-->
+        <img src="image/button_red_png.png" width="20" height="20">
+      </div>
+
+      <div style="position: absolute; z-index:2; left: 450px; top: 610px">        <!--DI07-->
+        <img src="image/button_red_png.png" width="20" height="20">
+      </div>
+      <div style="position: absolute; z-index:2; left: 450px; top: 650px">        <!--DI08-->
+        <img src="image/button_red_png.png" width="20" height="20">
+      </div>
+
+      <div style="position: absolute; z-index:2; left: 400px; top: 690px">        <!--DI17-->
+        <img src="image/button_red_png.png" width="20" height="20">
+      </div>
+      <div style="position: absolute; z-index:2; left: 450px; top: 732px">        <!--DI21-->
+        <img src="image/button_red_png.png" width="20" height="20">
+      </div>
+
+      <div style="position: absolute; z-index:2; left: 490px; top: 530px">        <!--DI14-->
+        <img src="image/button_red_png.png" width="20" height="20">
+      </div>
+
+      <div style="position: absolute; z-index:2; left: 645px; top: 530px">        <!--DI18-->
+        <img src="image/button_red_png.png" width="20" height="20">
+      </div>
+      <div style="position: absolute; z-index:2; left: 805px; top: 530px">        <!--DI19-->
+        <img src="image/button_red_png.png" width="20" height="20">
+      </div>
+      <div style="position: absolute; z-index:2; left: 955px; top: 530px">        <!--DI20-->
+        <img src="image/button_red_png.png" width="20" height="20">
+      </div>
+
+      <div style="position: absolute; z-index:2; left: 595PX; top: 720PX">        <!--DI09-->
+        <img src="image/button_red_png.png" width="20" height="20">
+      </div>
+      <div style="position: absolute; z-index:2; left: 540PX; top: 720PX">        <!--DI10-->
+        <img src="image/button_red_png.png" width="20" height="20">
+      </div>
+      <div style="position: absolute; z-index:2; left: 755PX; top: 720PX">        <!--DI11-->
+        <img src="image/button_red_png.png" width="20" height="20">
+      </div>
+      <div style="position: absolute; z-index:2; left: 700PX; top: 720PX">        <!--DI12-->
+        <img src="image/button_red_png.png" width="20" height="20">
+      </div>
+    </div>
+
+  </body>
+</html>
